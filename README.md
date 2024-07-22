@@ -38,10 +38,12 @@ Filmový Management Systém je webová aplikace určená k efektivní správě f
 
 ## Struktura projektu
 
-- **index.php:** Hlavní stránka s obsahem a funkcemi.
-- **conn.php:** Připojení k MySQL databázi a pomocné funkce.
-- **css/style.css:** Stylování stránky.
 - **favicon/favicon.png:** Ikony používané na webu.
+
+- `index.php`: Hlavní stránka s obsahem a funkcemi.
+- `conn.php`: Připojení k MySQL databázi.
+- `css/style.css`: Stylování stránky.
+- `favicon/`: Ikony používané na webu.
 
 ## API
 

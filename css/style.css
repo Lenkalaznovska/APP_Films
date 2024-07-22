@@ -1,0 +1,78 @@
+:root {
+  /* Globální proměnné */
+  --body-width: 35%;
+  --body-background-color: azure;
+  --body-text-align: center;
+
+  --form-background-color: aquamarine;
+  --form-padding: 10px;
+  --form-margin-top: 20px;
+  --form-border: 1px solid black;
+
+  --button-background-color: white;
+  --vyhledat-margin: 10px;
+  --zpet-width: 80%;
+
+  --table-width: 10%;
+  --table-border: 1px solid black;
+
+  --responsive-max-width-768: 768px;
+  --responsive-max-width-550: 550px;
+  --responsive-body-width: 90%;
+}
+
+/* Stylování pro tělo stránky */
+body {
+  width: var(--body-width);
+  margin: auto;
+  background-color: var(--body-background-color);
+  text-align: var(--body-text-align);
+}
+
+/* Stylování pro kontejner formuláře */
+.form {
+  background-color: var(--form-background-color);
+  padding: var(--form-padding);
+  margin-top: var(--form-margin-top);
+  border: var(--form-border);
+}
+
+/* Stylování pro tlačítka pro vyhledávání a navigaci */
+.vyhledat {
+  background-color: var(--button-background-color);
+  margin: var(--vyhledat-margin);
+}
+
+/* Stylování pro tlačítko pro návrat zpět */
+.zpet {
+  width: var(--zpet-width);
+  background-color: var(--button-background-color);
+}
+
+/* Stylování pro sloupce a řádky tabulky */
+table th,
+table td,
+table tr {
+  width: var(--table-width);
+  border: var(--table-border);
+}
+
+/* Responzivní design pro obrazovky s maximální šířkou 768px */
+@media only screen and (max-width: var(--responsive-max-width-768)) {
+  .form,
+  .vyhledat,
+  .zpet {
+    max-width: none;
+  }
+  /* Skrytí chatu Tawk.to na malých obrazovkách */
+  #tawk_root {
+    display: none;
+  }
+}
+
+/* Responzivní design pro obrazovky s maximální šířkou 550px */
+@media only screen and (max-width: var(--responsive-max-width-550)) {
+  body {
+    width: var(--responsive-body-width);
+  }
+}

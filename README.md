@@ -1,50 +1,50 @@
-# Filmový Management Systém
+# Film Management System
 
-Vítejte v repozitáři webových stránek Filmového Management Systému. Tento projekt je jednoduchá webová aplikace pro správu databáze filmů, která umožňuje přidávání, vyhledávání a aktualizaci záznamů o filmech.
+Welcome to the repository of the Film Management System website. This project is a simple web application for managing a movie database, allowing users to add, search, and update movie records. You can view the live version of the site [here](http://app-filmy.wz.cz).
 
-## Obsah
+## Contents
 
-1. [Popis](#popis)
-2. [Použité technologie](#použité-technologie)
-3. [Struktura projektu](#struktura-projektu)
+1. [Description](#description)
+2. [Technologies Used](#technologies-used)
+3. [Project Structure](#project-structure)
 4. [API](#api)
 
-## Popis
+## Description
 
-Filmový Management Systém je webová aplikace určená k efektivní správě filmů v databázi. Na této webové stránce najdete:
+The Film Management System is a web application designed for efficient management of movies in a database. On this website, you will find:
 
-- **Formulář pro zadání informací o filmu:** Uživatelé mohou přidávat nové filmy do databáze zadáním názvu filmu a autora.
-- **Vyhledávání filmů:** Uživatelé mohou vyhledávat filmy podle názvu a autora.
-- **Zobrazení všech filmů:** Uživatelé mohou zobrazit seznam všech filmů v databázi.
-- **Aktualizace filmů:** Pokud film již existuje, uživatelé mohou aktualizovat jméno autora pro existující film.
-- **Živý chat:** Implementace chatu pomocí API Tawk.to pro komunikaci s uživateli.
+- **Movie Information Form:** Users can add new movies to the database by entering the movie title and author.
+- **Movie Search:** Users can search for movies by title and author.
+- **View All Movies:** Users can view a list of all movies in the database.
+- **Update Movies:** If a movie already exists, users can update the author’s name for the existing movie.
+- **Live Chat:** Integration of live chat using the Tawk.to API for real-time communication with users.
 
-## Použité technologie
+## Technologies Used
 
 ### Frontend
 
-- **HTML5:** Struktura webové stránky.
-- **CSS3:** Stylování webové stránky.
+- **HTML5:** Structure of the website.
+- **CSS3:** Styling of the website.
 
 ### Backend
 
-- **PHP:** Zpracování dat a interakce s databází.
-- **MySQL:** Databáze pro ukládání informací o filmech.
+- **PHP:** Data processing and interaction with the database.
+- **MySQL:** Database for storing movie information.
 
-### Vývojové nástroje
+### Development Tools
 
-- **XAMPP:** Lokální webový server obsahující Apache, MySQL a PHP.
-- **Apache Server:** Webový server pro provoz PHP aplikací.
+- **XAMPP:** Local web server containing Apache, MySQL, and PHP.
+- **Apache Server:** Web server for running PHP applications.
 
-## Struktura projektu
+## Project Structure
 
-- `index.php`: Hlavní stránka s obsahem a funkcemi.
-- `conn.php`: Připojení k MySQL databázi.
-- `css/style.css`: Stylování stránky.
-- `favicon/`: Ikona používaná na webu.
+- `index.php`: Main page with content and functionalities.
+- `conn.php`: Connection to the MySQL database.
+- `css/style.css`: Styling of the page.
+- `favicon/`: Icon used on the website.
 
 ## API
 
-Projekt obsahuje následující API:
+The project includes the following API:
 
-- **Tawk.to chat:** API pro integraci živého chatu Tawk.to pro komunikaci s uživateli v reálném čase.
+- **Tawk.to chat:** API for integrating Tawk.to live chat for real-time communication with users.

@@ -1,6 +1,6 @@
 # Film Management System
 
-Welcome to the repository of the Film Management System website. This project is a simple web application for managing a movie database, allowing users to add, search, and update movie records. You can view the live version of the site [here](http://app-filmy.wz.cz).
+Welcome to the repository of the Film Management System website. This project is a simple web application for managing a movie database, allowing users to add, search, and update movie records. You can view the live version of the site [here](http://app-filmy.wz.cz:8080).
 
 ## Contents
 

@@ -1,78 +1,145 @@
-/* Globální proměnné */
 :root {
-  --body-width: 35%;
-  --body-background-color: azure;
+  /* Global variables */
+  --body-max-width: 600px;
+  --body-background-color: #f0f8ff;
   --body-text-align: center;
+  --body-font-family: Arial, sans-serif;
+  --body-font-color: #333;
 
-  --form-background-color: aquamarine;
-  --form-padding: 10px;
+  --form-background-color: #e0f7fa;
+  --form-padding: 20px;
   --form-margin-top: 20px;
-  --form-border: 1px solid black;
+  --form-border-radius: 8px;
+  --form-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  --button-background-color: white;
-  --vyhledat-margin: 10px;
-  --zpet-width: 80%;
+  --input-padding: 10px;
+  --input-margin-bottom: 15px;
+  --input-border: 1px solid #ccc;
+  --input-border-radius: 4px;
 
-  --table-width: 10%;
-  --table-border: 1px solid black;
+  --button-background-color: #00796b;
+  --button-color: #fff;
+  --button-padding: 10px 20px;
+  --button-margin: 10px 5px;
+  --button-border: none;
+  --button-border-radius: 4px;
+  --button-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --button-hover-background-color: #004d40;
+
+  --table-width: 100%;
+  --table-border: 1px solid #ccc;
+  --table-border-collapse: collapse;
+  --table-cell-padding: 10px;
 
   --responsive-max-width-768: 768px;
   --responsive-max-width-550: 550px;
   --responsive-body-width: 90%;
 }
 
-/* Stylování pro tělo stránky */
+/* Styling for the body of the page */
 body {
-  width: var(--body-width);
+  max-width: var(--body-max-width);
   margin: auto;
   background-color: var(--body-background-color);
   text-align: var(--body-text-align);
+  font-family: var(--body-font-family);
+  color: var(--body-font-color);
+  padding: 20px;
 }
 
-/* Stylování pro kontejner formuláře */
+/* Styling for the form container */
 .form {
   background-color: var(--form-background-color);
   padding: var(--form-padding);
   margin-top: var(--form-margin-top);
-  border: var(--form-border);
+  border-radius: var(--form-border-radius);
+  box-shadow: var(--form-box-shadow);
 }
 
-/* Stylování pro tlačítka pro vyhledávání a navigaci */
-.vyhledat {
-  background-color: var(--button-background-color);
-  margin: var(--vyhledat-margin);
+/* Styling for inputs within the form */
+.form input {
+  width: 100%;
+  padding: var(--input-padding);
+  margin-bottom: var(--input-margin-bottom);
+  border: var(--input-border);
+  border-radius: var(--input-border-radius);
+  box-sizing: border-box;
 }
 
-/* Stylování pro tlačítko pro návrat zpět */
+/* Styling for buttons */
+.vyhledat,
 .zpet {
-  width: var(--zpet-width);
   background-color: var(--button-background-color);
+  color: var(--button-color);
+  padding: var(--button-padding);
+  margin: var(--button-margin);
+  border-radius: var(--button-border-radius);
+  box-shadow: var(--button-box-shadow);
+  cursor: pointer;
+  border: none;
 }
 
-/* Stylování pro sloupce a řádky tabulky */
-table th,
-table td,
-table tr {
+.vyhledat:hover,
+.zpet:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+/* Styling for the back button */
+.zpet {
+  width: 100%;
+}
+
+/* Styling for the table */
+table {
   width: var(--table-width);
   border: var(--table-border);
+  border-collapse: var(--table-border-collapse);
+  margin: 20px 0;
 }
 
-/* Responzivní design pro obrazovky s maximální šířkou 768px */
+table th,
+table td {
+  padding: var(--table-cell-padding);
+  border: var(--table-border);
+  text-align: left;
+}
+
+/* Responsive design for screens with a maximum width of 768px */
 @media only screen and (max-width: var(--responsive-max-width-768)) {
+  body {
+    width: var(--responsive-body-width);
+  }
+
   .form,
   .vyhledat,
   .zpet {
+    width: 100%;
     max-width: none;
   }
-  /* Skrytí chatu Tawk.to na malých obrazovkách */
+
+  .form input {
+    width: 100%;
+  }
+
+  /* Hide Tawk.to chat on small screens */
   #tawk_root {
     display: none;
   }
 }
 
-/* Responzivní design pro obrazovky s maximální šířkou 550px */
+/* Responsive design for screens with a maximum width of 550px */
 @media only screen and (max-width: var(--responsive-max-width-550)) {
   body {
     width: var(--responsive-body-width);
+  }
+
+  .form,
+  .vyhledat,
+  .zpet {
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
   }
 }

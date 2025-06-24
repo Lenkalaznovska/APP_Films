@@ -2,6 +2,8 @@
 
 Welcome to the repository of the Film Management System website. This project is a simple web application for managing a movie database, allowing users to add, search, and update movie records. You can view the live version of the site [here](http://app-filmy.wz.cz:8080)
 
+![image](https://github.com/user-attachments/assets/e674efb0-d9d0-4d1c-b87a-a7135bae445b)
+
 ## Contents
 
 1. [Description](#description)

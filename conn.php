@@ -1,8 +1,8 @@
 <?php
-$servername = "sql5.webzdarma.cz";
-$username = "appfilmywzcz7286";
-$password = "8QMn5(m47*1k9,S@6k3,";
-$dbname = "appfilmywzcz7286";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Vytvoření připojení
 $conn = mysqli_connect($servername, $username, $password, $dbname);
